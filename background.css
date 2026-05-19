@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter Tight", sans-serif;
+    color: rgba(0, 7, 4, 1);
+}
+
+.container{
+    padding: 130px 150px;
+    max-width: 1440px;
+    margin: 0 auto;        /* Автоматические отступы слева и справа центрируют блок */
+    width: 100%;           /* Позволяет контейнеру сжиматься на экранах меньше 1440px */
+}
+
+.backgrounds{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.background{
+    width: 100%;
+    display: block; /* Убирает системный зазор под картинкой */
+}
+
+.background__author{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00bfa5; /*зеленая полоса под именем */
+    padding-top: 20px; /* Отступ от картинки до текста */
+    padding-bottom: 20px; /* Отступ от текста до зеленой линии */
+}
